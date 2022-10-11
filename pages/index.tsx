@@ -1,20 +1,9 @@
-//react imports
-import { useState } from 'react';
-
-//mui imports
-import { Grid } from '@mui/material';
-
-//gql queries
-import { GetLaunchesPast } from '../graphql/queries/GetLaunchesPast';
-
-//apollo client imports
-import { useQuery } from "@apollo/client";
-
-//interfaces import
-import PastLaunchInterface from '../model/PastLaunch/PastLaunch';
-
-//components import
-import LoadingData from '../components/LoadingData';
+import { useState } from 'react';//react imports
+import { Grid } from '@mui/material';//mui imports
+import { GetLaunchesPast } from '../graphql/queries/GetLaunchesPast';//gql queries
+import { useQuery } from "@apollo/client";//apollo client imports
+import PastLaunchInterface from '../model/PastLaunch/PastLaunch';//interfaces import
+import LoadingData from '../components/LoadingData';//components import
 import PastLaunch from '../components/PastLaunch';
 
 export default function Index () {
